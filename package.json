@@ -1,0 +1,22 @@
+{
+  "name": "self-improving-scheduling-agent",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "agent": "tsx src/chat.ts",
+    "loop": "tsx src/improve.ts",
+    "chat": "tsx src/chat.ts",
+    "eval": "tsx src/eval.ts",
+    "improve": "tsx src/improve.ts",
+    "test": "tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.60.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
